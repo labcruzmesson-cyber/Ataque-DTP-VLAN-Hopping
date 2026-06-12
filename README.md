@@ -1,6 +1,6 @@
 # Seguridad de Red: DTP VLAN Hopping e Inyección de Capa 2
 
-## 📋 Información del Proyecto
+## Información del Proyecto
 > [!NOTE]
 > **Institución:** Instituto Tecnológico de las Américas (ITLA)  
 > **Curso:** Seguridad de Redes  
@@ -66,7 +66,7 @@ Dado que DTP utiliza una estructura basada en **Type-Length-Value (TLV)**, el sc
 La explotación metódica del puerto del switch mediante el script se divide de manera rigurosa en cuatro fases operativas consecutivas:
 
 * **Fase 1: Reconocimiento e Inicialización de la Interfaz** El script determina de forma automática la dirección MAC física de la estación de auditoría local (Kali Linux) vinculada a la interfaz designada (`eth0`), preparándola para el enmascaramiento lógico de las tramas salientes.  
-  > ⚠️ **Nota de Laboratorio:** Aunque el output por defecto del script mencione `Fa0/1`, la interfaz real que estaremos transformando y comprometiendo en esta topología es la **`Gi0/3`**.
+  > **Nota de Laboratorio:** Aunque el output por defecto del script mencione `Fa0/1`, la interfaz real que estaremos transformando y comprometiendo en esta topología es la **`Gi0/3`**.
 
 * **Fase 2: Inyección de Mensajes de Estado Desirable** A través de un bucle controlado por tiempo (`interval=0.5`), se inyectan las ráfagas de paquetes estructurados simulando un dispositivo switch de distribución legítimo que requiere levantar un enlace troncal.
 
